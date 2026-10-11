@@ -3,12 +3,12 @@ import patternBg from "../images/bg-tablet-pattern.svg";
 
 function Features() {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24">
-      {/* soft orange shape on the left side (desktop only) */}
+    <section id="features" className="relative overflow-hidden py-16 md:py-24">
+     
       <img
         src={patternBg}
         alt=""
-        className="absolute -left-72 top-40 -z-10 hidden w-[36rem] rotate-180 md:block"
+        className="absolute -left-72 top-40 -z-10 hidden w-xl rotate-180 md:block"
       />
 
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:gap-16">

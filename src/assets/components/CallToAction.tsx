@@ -5,7 +5,7 @@ import bgDesktop from "../images/bg-simplify-section-desktop.svg";
 function CallToAction() {
   return (
     <section className="relative overflow-hidden bg-orange-400">
-      {/* decorative lighter shapes, one image per screen size */}
+
       <img src={bgMobile} alt="" className="absolute inset-0 h-full w-full object-cover md:hidden" />
       <img src={bgDesktop} alt="" className="absolute inset-0 hidden h-full w-full object-cover md:block" />
 
@@ -13,7 +13,7 @@ function CallToAction() {
         <h2 className="max-w-sm text-4xl font-bold leading-tight text-white md:text-4xl">
           Simplify how your team works today.
         </h2>
-        <Button variant="white">Get Started</Button>
+       <Button href="#newsletter">Get Started</Button>
       </div>
     </section>
   );

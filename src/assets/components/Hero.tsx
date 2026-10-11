@@ -9,7 +9,7 @@ function Hero() {
       <img
         src={patternBg}
         alt=""
-        className="absolute -right-24 -top-32 -z-10 w-[28rem] md:-right-10 md:-top-40 md:w-[44rem]"
+        className="absolute -right-24 -top-32 -z-10 w-md md:-right-10 md:-top-40 md:w-17"
       />
 
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 pb-16 md:flex-row-reverse md:gap-16 md:pb-28 md:pt-8">
@@ -28,7 +28,7 @@ function Hero() {
             while keeping the larger team goals in view.
           </p>
           <div className="mt-8">
-            <Button>Get Started</Button>
+            <Button href="#newsletter">Get Started</Button>
           </div>
         </div>
       </div>

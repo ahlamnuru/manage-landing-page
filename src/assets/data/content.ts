@@ -4,12 +4,26 @@ import avatarAli from "../images/avatar-ali.png";
 import avatarRichard from "../images/avatar-richard.png";
 import avatarShanai from "../images/avatar-shanai.png";
 
-// the links in the top menu
-export const navLinks = ["Pricing", "Product", "About Us", "Careers", "Community"];
+export const navLinks = [
+  { label: "Pricing", href: "#features" },
+  { label: "Product", href: "#features" },
+  { label: "About Us", href: "#testimonials" },
+  { label: "Careers", href: "#newsletter" },
+  { label: "Community", href: "#newsletter" },
+];
 
-// the links in the footer, split in two columns
-export const footerLinksLeft = ["Home", "Pricing", "Products", "About Us"];
-export const footerLinksRight = ["Careers", "Community", "Privacy Policy"];
+export const footerLinksLeft = [
+  { label: "Home", href: "#top" },
+  { label: "Pricing", href: "#features" },
+  { label: "Products", href: "#features" },
+  { label: "About Us", href: "#testimonials" },
+];
+
+export const footerLinksRight = [
+  { label: "Careers", href: "#newsletter" },
+  { label: "Community", href: "#newsletter" },
+  { label: "Privacy Policy", href: "#top" },
+];
 
 export const features: Feature[] = [
   {
