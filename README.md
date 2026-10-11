@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# Manage Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, modern, and fully responsive landing page built using **React**, **TypeScript**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Responsive Navigation**: Features a desktop navigation bar and an interactive mobile menu toggle built with React state (`Header.tsx`)[cite: 1, 3].
+* **Hero Section**: Showcases the core product message with a split-screen layout and vector illustration[cite: 1, 3].
+* **Features Section**: Highlights key product benefits using clean data mapping (`Features.tsx`)[cite: 1, 2, 3].
+* **Customer Testimonials**: Displays customer reviews and profile cards (`Testimonials.tsx`)[cite: 1, 3].
+* **Interactive Call to Action**: Includes an email input form with client-side validation logic (`CallToAction.tsx` and `validateEmail.ts`)[cite: 1, 2, 3].
+* **Footer**: Organized with quick links, brand logo variant, and social media icons (`Footer.tsx`)[cite: 1, 3].
 
-## React Compiler
+##  Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React** (with TypeScript)[cite: 1]
+* **Vite** (fast build tool and dev server)[cite: 1, 3]
+* **Tailwind CSS** (utility-first styling)[cite: 1, 3]
+* **pnpm** (package manager)[cite: 3]
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To run this project locally:
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+1. Clone the repository and navigate into the project folder.
+2. Install dependencies:
+   ```bash
+   pnpm install
